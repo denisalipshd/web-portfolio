@@ -1,0 +1,298 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #010101;
+}
+
+section {
+  position: relative;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+nav {
+  width: 100%;
+  background-color: #04a836;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: fixed;
+  z-index: 1000;
+}
+
+nav div img {
+  width: 50px;
+  border-radius: 30%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgb(20, 219, 20);
+}
+
+nav ul li a:hover {
+  color: #010101;
+  border-bottom: 1px solid white;
+}
+
+.menu-icon {
+  font-size: 28px;
+  display: none;
+}
+
+.banner {
+  width: 100%;
+  color: #f4f4f4;
+  height: 100vh;
+  text-align: center;
+  padding-top: 70px;
+  background-image: url(img/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner .box-bounty {
+  padding-top: 15rem;
+}
+
+.banner img {
+  border-radius: 100px;
+  height: 150px;
+  border: 6px solid #f4f4f4;
+  margin-top: 100px;
+}
+
+.banner h1 {
+  color: #f4f4f4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 40px;
+}
+
+.banner button {
+  background-color: rgb(20, 219, 20);
+  margin-top: 60px;
+  padding: 10px;
+  width: 400px;
+  border-radius: 50px;
+  border: none;
+}
+
+.banner button:hover {
+  background-color: #22ad15;
+  border: 1px solid #f4f4f4;
+  color: white;
+}
+
+.banner span:before {
+  content: "";
+  animation: gerak infinite 8s ease;
+  transform: translateY(-50%);
+  color: rgb(20, 219, 20);
+  font-size: 70px;
+}
+
+.box-bounty,
+.box-skill {
+  text-align: center;
+  color: black;
+  margin-top: 30px;
+  align-content: center;
+}
+
+.box-bounty .row,
+.box-skill .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* .box-bounty, */
+/* .box-skill, */
+.box-kiri,
+.box-tengah,
+.box-kanan {
+  flex: 1;
+  min-width: 250px;
+  background: #04a836;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-kiri img,
+.box-tengah img,
+.box-kanan img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.box-bounty h1,
+.box-skill h1 {
+  color: red;
+}
+
+.box-bounty span,
+.box-skill span {
+  color: #f4f4f4;
+}
+
+.box-bounty h3,
+.box-skill h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: red;
+}
+
+.box-bounty p,
+.box-skill p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.box-kiri:hover,
+.box-tengah:hover,
+.box-kanan:hover {
+  background-color: #51e234;
+}
+
+/* Bagian untuk formulir kontak */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #28b34b;
+}
+
+.contact-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form h1 span {
+  color: red; /* Warna aksen untuk "Us" */
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical; 
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #384636;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact-form h1 {
+    font-size: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+  }
+}
+
+@keyframes gerak {
+  0% {
+    content: "Selamat Datang";
+  }
+  50% {
+    content: "Saya Roronoa Zoro";
+  }
+  100% {
+    content: "Makasih Sudah Singgah!";
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+}

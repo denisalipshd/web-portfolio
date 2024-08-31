@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="img/logo.jpeg" alt="my-avatar" />
+      </div>
+      <div id="menu-icon" class="menu-icon">
+        <i class="ph ph-list"></i>
+      </div>
+      <ul id="menu-list" class="hidden">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#bounty">Bounty</a>
+        </li>
+        <li>
+          <a href="#softskill">Soft Skill</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- bagian home -->
+    <div class="banner" id="home">
+      <img src="img/zoro.jpeg" alt="zoro" />
+      <h1>Hai...<span></span></h1>
+      <p>Salam hangat nakama semoga kalian sehat selalu</p>
+      <a href=""><button>Selengkapnya</button></a>
+    </div>
+
+    <!-- bagian bounty -->
+    <section id="bounty">
+      <div class="box-bounty">
+        <h1>Riwayat <span>Bounty</span></h1>
+        <div class="row">
+          <div class="box-kiri">
+            <img src="img/bounty1.jpeg" alt="baounty1" />
+            <h3>Bounty <span>Pertama</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis reprehenderit vel veritatis? Corrupti rerum eligendi dolor molestiae, repudiandae inventore.</p>
+          </div>
+          <div class="box-tengah">
+            <img src="img/bounty2.jpeg" alt="baounty1" />
+            <h3>Bounty <span>Kedua</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis reprehenderit vel veritatis? Corrupti rerum eligendi dolor molestiae, repudiandae inventore.</p>
+          </div>
+          <div class="box-kanan">
+            <img src="img/bounty3.jpeg" alt="baounty1" />
+            <h3>Bounty <span>Ketiga</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis reprehenderit vel veritatis? Corrupti rerum eligendi dolor molestiae, repudiandae inventore.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian skill -->
+    <section id="softskill">
+      <div class="box-skill">
+        <h1>Soft <span>Skill</span></h1>
+        <div class="row">
+          <div class="box-kiri">
+            <img src="img/skil1.jpeg" alt="baounty1" />
+            <h3>Soft <span>Skill</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis reprehenderit vel veritatis? Corrupti rerum eligendi dolor molestiae, repudiandae inventore.</p>
+          </div>
+          <div class="box-tengah">
+            <img src="img/skil2.jpeg" alt="baounty1" />
+            <h3>Soft <span>Skill</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis reprehenderit vel veritatis? Corrupti rerum eligendi dolor molestiae, repudiandae inventore.</p>
+          </div>
+          <div class="box-kanan">
+            <img src="img/skil3.jpeg" alt="baounty1" />
+            <h3>Soft <span>Skill</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis reprehenderit vel veritatis? Corrupti rerum eligendi dolor molestiae, repudiandae inventore.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian kontak -->
+    <section id="contact">
+      <div class="contact-form">
+        <h1>Contact <span>Us</span></h1>
+        <form action="your-server-endpoint" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
